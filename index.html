@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fumart - Product Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Spline+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <aside class="sidebar">
+        <div class="brand">
+            <span class="brand-gradient">Fumart</span>
+            <span class="brand-subtitle">for seller</span>
+        </div>
+        <nav class="menu">
+            <ul>
+                <li><a href="#"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+                <li class="active"><a href="index.html"><i class="fas fa-box-open"></i> Products</a></li>
+                <li><a href="#"><i class="fas fa-shopping-cart"></i> Orders</a></li>
+                <li><a href="#"><i class="fas fa-cog"></i> Settings</a></li>
+            </ul>
+        </nav>
+        <div class="sidebar-footer">
+            <ul>
+                <li><a href="#"><i class="fas fa-question-circle"></i> Help</a></li>
+                <li><a href="#"><i class="fas fa-comment-dots"></i> Feedback</a></li>
+            </ul>
+        </div>
+    </aside>
+
+    <main class="main-content">
+        <header class="top-header">
+             <div class="user-profile">
+                <i class="fas fa-user-circle"></i>
+             </div>
+        </header>
+
+        <div class="content-wrapper">
+            <div class="page-header">
+                <h1 class="title-large">Products</h1>
+                <a href="add-product.html" class="btn-add-blue">
+                    <i class="fas fa-plus"></i> Add Product
+                </a>
+            </div>
+
+            <div class="product-grid" id="productContainer">
+                </div>
+        </div>
+    </main>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

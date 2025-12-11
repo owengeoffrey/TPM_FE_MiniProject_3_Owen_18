@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fumart - Update Product</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Spline+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <aside class="sidebar">
+        <div class="brand">
+            <span class="brand-gradient">Fumart</span>
+            <span class="brand-subtitle">for seller</span>
+        </div>
+        <nav class="menu">
+            <ul>
+                <li><a href="#"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+                <li class="active"><a href="index.html"><i class="fas fa-box-open"></i> Products</a></li>
+                <li><a href="#"><i class="fas fa-shopping-cart"></i> Orders</a></li>
+                <li><a href="#"><i class="fas fa-cog"></i> Settings</a></li>
+            </ul>
+        </nav>
+        <div class="sidebar-footer">
+            <ul>
+                <li><a href="#"><i class="fas fa-question-circle"></i> Help</a></li>
+                <li><a href="#"><i class="fas fa-comment-dots"></i> Feedback</a></li>
+            </ul>
+        </div>
+    </aside>
+
+    <main class="main-content">
+        <header class="top-header">
+             <div class="user-profile">
+                <i class="fas fa-user-circle"></i>
+             </div>
+        </header>
+
+        <div class="content-wrapper">
+            <h1 class="title-large">Update Product</h1>
+            <div class="form-card">
+                <form id="updateProductForm">
+                    <div class="form-group-row">
+                        <label>Name:</label>
+                        <input type="text" id="pName" class="input-soft-blue" required>
+                    </div>
+                    <div class="form-group-row">
+                        <label>Category:</label>
+                        <input type="text" id="pCategory" class="input-soft-blue" required>
+                    </div>
+                    <div class="form-group-row">
+                        <label>Price:</label>
+                        <input type="number" id="pPrice" class="input-soft-blue" required>
+                    </div>
+                    <div class="form-group-row">
+                        <label>Desc:</label>
+                        <textarea id="pDesc" class="input-soft-blue" rows="3"></textarea>
+                    </div>
+
+                    <div class="form-group-row">
+                        <label>Photo:</label>
+                        <div>
+                            <input type="file" id="pPhoto" accept="image/*" class="input-soft-blue">
+                            <br>
+                            <img id="imgPreview" src="" style="max-height: 150px; margin-top: 10px; display: none; border-radius: 8px; border: 1px solid #ddd;">
+                        </div>
+                    </div>
+
+                    <hr>
+                    <div style="text-align: right;">
+                        <button type="submit" class="btn-submit-blue">Update Product</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
